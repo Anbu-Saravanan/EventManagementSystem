@@ -84,6 +84,7 @@ public class SecurityConfig {
                         .requestMatchers("/api/attendance/**").hasRole("ADMIN")
                         .requestMatchers("/api/registration/**").permitAll()
                         .requestMatchers("/api/speakers/**").permitAll()
+                        .requestMatchers("/api/check/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .oauth2ResourceServer(oauth -> oauth
