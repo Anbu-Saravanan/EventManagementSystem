@@ -127,9 +127,6 @@ public class SecurityConfig {
         cfg.setAllowedOrigins(List.of("http://localhost:3000",
                 "https://eventmanagementsystem-react-fronten.vercel.app"));
 
-        cfg.setAllowedOrigins(List.of("http://localhost:3000",
-                "https://eventmanagementsystem-react-fronten.vercel.app/"));
-
         cfg.setAllowedMethods(List.of("GET","POST","PUT","DELETE","OPTIONS"));
         cfg.setAllowedHeaders(List.of("Authorization","Content-Type","Accept"));
         cfg.setAllowCredentials(true);
